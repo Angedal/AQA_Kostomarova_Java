@@ -9,9 +9,10 @@ public class Main {
         checkName("Марина");
         checkName("");
 //        Задача 3
-        showMultiple(new int[]{9, 999, 47, 36, 59});
-        showMultiple(new int[]{0, 21, 8});
-        showMultiple(new int[]{-15});
+        showMultiple(new int[]{9, 999, 36, 59});
+        showMultiple(new int[]{0, 21});
+        showMultiple(new double[]{15.0, -17, -12});
+        showMultiple(new double[]{0.0, 3});
     }
 
     //    Реализация задачи 1
@@ -28,6 +29,11 @@ public class Main {
     //    Реализация задачи 3
     static void showMultiple(int[] nums) {
         for (int i : nums) {
+            if (i % 3 == 0 && i != 0) System.out.println(i);
+        }
+    }
+    static void showMultiple(double[] nums) {
+        for (double i : nums) {
             if (i % 3 == 0 && i != 0) System.out.println(i);
         }
     }
